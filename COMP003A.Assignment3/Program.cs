@@ -15,28 +15,29 @@ namespace COMPA.LectureAssigment3
             Console.Write("\nEnter a numeric grade (0-100): ");
             int NumericGrade = Convert.ToInt32(Console.ReadLine());
 
-            if (NumericGrade >= 0 && NumericGrade <= 100 ) { }
-
-            if (NumericGrade >= 90)
+            if (NumericGrade >= 0 && NumericGrade <= 100 )
             {
-                Console.WriteLine("\tLetter Grade: A");
-            }
+                if (NumericGrade >= 90)
+                {
+                    Console.WriteLine("\tLetter Grade: A");
+                }
 
-            else if (NumericGrade >= 80)
-            {
-                Console.WriteLine("\tLetter Grade: B");
-            }
-            else if (NumericGrade >= 70)
-            {
-                Console.WriteLine("\tLetter Grade: C");
+                else if (NumericGrade >= 80)
+                {
+                    Console.WriteLine("\tLetter Grade: B");
+                }
+                else if (NumericGrade >= 70)
+                {
+                    Console.WriteLine("\tLetter Grade: C");
 
-            }
-            else if (NumericGrade >= 60)
-            {
-                Console.WriteLine("\tLetter Grade: D");
+                }
+                else if (NumericGrade >= 60)
+                {
+                    Console.WriteLine("\tLetter Grade: D");
 
+                }
+                else { Console.WriteLine("\tLetter Grade: F"); }
             }
-            else { Console.WriteLine("\tLetter Grade: F"); }
 
             /************************************************************/
 
